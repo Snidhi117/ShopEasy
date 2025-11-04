@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🛍 ShopEasy – Mini E-Commerce App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛍 ShopEasy</h1>
+    <div id="cartIcon" role="button" tabindex="0" aria-label="Shopping cart">
+      🛒 <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search products..."
+        aria-label="Search products"
+      />
+    </div>
+    <section id="productList" class="grid" role="list"></section>
+  </main>
+
+  <div id="notification" class="notification"></div>
+
+  <div id="cartModal" class="modal" role="dialog" aria-labelledby="cartTitle" aria-modal="true">
+    <div class="modal-content">
+      <span id="closeCart" role="button" tabindex="0" aria-label="Close cart">&times;</span>
+      <h2 id="cartTitle">Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <div class="cart-total">
+        <strong>Total:</strong> £<span id="totalPrice">0.00</span>
+      </div>
+      <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
