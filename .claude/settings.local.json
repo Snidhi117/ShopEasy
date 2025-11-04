@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: complete shopeasy e-commerce app with modern features\n\nMajor improvements and bug fixes:\n- Fix critical file naming issue (product.js → products.js)\n- Remove duplicate addToCart() function\n- Add real-time product search functionality\n- Add quantity adjustment controls (+/- buttons in cart)\n- Implement toast notifications for user feedback\n- Add keyboard navigation (ESC to close modal)\n- Enhance UI with modern design and smooth animations\n- Improve mobile responsiveness across all screen sizes\n- Add ARIA labels and accessibility features\n- Improve checkout process with validation\n- Add sticky header and gradient backgrounds\n- Implement click-outside-to-close for modal\n- Update comprehensive README documentation\n\nNew Features:\n✨ Real-time search bar\n✨ Quantity controls in cart\n✨ Toast notifications\n✨ Enhanced modal with animations\n✨ Full keyboard accessibility\n✨ Mobile-first responsive design\n✨ Better error handling\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
